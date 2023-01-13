@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Panirama</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href=""
+    </head>
+    <body class="body_background" background="bgart.jfif">
+        <div align="center">
+            <h1>Panirama</h1>
+            <canvas id="myCanvas" width="435" height="326.25"> </canvas>
+            <br><br>
+            <span class="t"> Color - </span>
+            <input type="text" id="color">
+            <span class="t"> Width - </span>
+            <input type="text" id="width_of_line">
+            <br>
+            <br>
+            <button onclick="clearArea()"; class="btn btn-info";>Clear Area</button>
+
+            <button onclick="info()"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to play</button>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="model-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="model-title">How to play/draw</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> <b>Directions to play: </b><br> Move your cursor around the canvas to draw on the screen. <br> To change the color and width, type your color and width in the designated inputs, and you will have your color and width ready when you start drawing again. <br> To clear the area, click on "Clear area" to automatically wipe your screen.
+                            </p>
+                            <p id="red">NOTE: When you would like to erase, please type the color as 'White' and the width depends on weather you are erasing a very specific detail or if you are erasing a big part of your drawing.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="interesting.js"></script>
+        
+    </body>
+</html>
